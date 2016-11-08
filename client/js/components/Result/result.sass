@@ -1,0 +1,82 @@
+.result
+  &__container
+    width: 16rem
+    align-items: center
+    margin: auto
+    margin-bottom: 2rem
+
+
+  &__img
+    width: 12rem
+    height: 12rem
+    border-radius: 50%
+    display: block
+    margin: auto
+    box-shadow: 5px 5px 15px rgba(#000, 0.3)
+    cursor: pointer
+    z-index: 1
+
+  &__box
+    background: #EAEAEA
+    border: 1px solid #E6E6E6
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    padding: 1.5rem 1rem 1rem 1rem
+    margin-top: -0.5rem
+    text-align: center
+    box-shadow: 3px 3px 5px rgba(#000, 0.1)
+
+  &__name
+    flex-basis: 100%
+    flex-grow: 1
+    flex-shrink: 0
+    font-weight: 300
+    color: #333
+    margin-bottom: 1rem
+
+  &__btnContainer,
+  &__counterContainer
+    flex-basis: 50%
+
+  &__counterContainer
+    text-align: left
+    border-right: 1px solid #adadad
+
+  &__btnContainer
+    text-align: right
+
+  &__counter,
+  &__btn
+    font-family: 'Lato'
+    font-size: 0.625rem
+    font-weight: 300
+    color: #808080
+
+
+  &__btn
+    background: transparent
+    border: 1px solid #8C8C8C
+    border-radius: 0.2rem
+    padding: 0.2rem 0.5rem 0.3rem 0.5rem
+    &:active
+      background: rgba(#000, 0.3)
+
+    &--on
+      background: #005472
+      color: #EAEAEA
+
+      &:active
+        background:
+          color: #04465d
+
+.shake
+  animation: shake 120ms ease-in
+    iteration-count: 3
+
+
+@keyframes shake
+  25%
+    transform: rotateZ(-2deg)
+  75%
+    transform: rotateZ(2deg)
